@@ -218,10 +218,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/vendor/firmware/osc_rtp_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/osc_rtp_24K_5s.bin \
     vendor/xiaomi/surya/proprietary/vendor/firmware/tas256x_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tas256x_reg.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
-    vendor/xiaomi/surya/proprietary/vendor/lib/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmisoundfx.so \
-    vendor/xiaomi/surya/proprietary/vendor/lib64/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmisoundfx.so \
     vendor/xiaomi/surya/proprietary/vendor/lib/rfsa/adsp/tas25xx_TI_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tas25xx_TI_0.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib/rfsa/adsp/tas25xx_TI_1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tas25xx_TI_1.bin \
+    vendor/xiaomi/surya/proprietary/vendor/lib/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmisoundfx.so \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/com.qti.sensormodule.j20c_aac_gc02m1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.j20c_aac_gc02m1b_depth.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/com.qti.sensormodule.j20c_aac_hi1337_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.j20c_aac_hi1337_ultra.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/com.qti.sensormodule.j20c_aac_hi259_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.j20c_aac_hi259_macro.bin \
@@ -260,9 +259,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/surya/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/xiaomi/surya/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
-    vendor/xiaomi/surya/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
-    vendor/xiaomi/surya/proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMegviiFacepp-0.5.2.so \
+    vendor/xiaomi/surya/proprietary/vendor/lib64/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmisoundfx.so \
     vendor/xiaomi/surya/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/surya/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/xiaomi/surya/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -588,6 +585,7 @@ PRODUCT_PACKAGES += \
     libmibokeh_712 \
     libminkdescriptor \
     libminksocket \
+    libmpbase \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -745,8 +743,6 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
-    libaptXHD_encoder \
-    libaptX_encoder \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
